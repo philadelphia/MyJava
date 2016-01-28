@@ -3,7 +3,7 @@ package com.zt.singleton;
 public class SingletonHunger {
 	
 	private static SingletonHunger instance ;
-	private final static Object object = new Object();
+//	private final static Object object = new Object();
 	private SingletonHunger(){}
 	
 	public static synchronized SingletonHunger getInstance(){

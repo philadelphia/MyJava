@@ -3,7 +3,6 @@ package com.zt.factory;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.Set;
 
 public class FactoryMode {
 	private static Icar car  ;
