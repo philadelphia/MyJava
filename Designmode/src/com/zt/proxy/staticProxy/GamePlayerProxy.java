@@ -1,4 +1,4 @@
-package com.zt.proxy;
+package com.zt.proxy.staticProxy;
 
 public class GamePlayerProxy implements IgamePlayer {
 

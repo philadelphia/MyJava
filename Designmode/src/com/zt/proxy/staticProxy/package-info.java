@@ -5,4 +5,4 @@
  * @author Tao.ZT.Zhang
  *
  */
-package com.zt.thread;
+package com.zt.proxy.staticProxy;
