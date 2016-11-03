@@ -1,7 +1,5 @@
 package com.zt.proxy.dynamicProxy;
 
-import com.zt.proxy.dynamicProxy.IgamePlayer;
-
 public class GamePlayer implements IgamePlayer,ISudent {
 
 	private String name;
@@ -35,4 +33,11 @@ public class GamePlayer implements IgamePlayer,ISudent {
 		System.out.println("studying.........");
 		
 	}
+
+	@Override
+	public String toString() {
+		return "GamePlayer [name=" + name + "]";
+	}
+	
+	
 }
