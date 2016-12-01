@@ -2,9 +2,24 @@ package com.zt.json.bean;
 
 import java.util.List;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Student {
+
 	private int age;
 	private String name;
+	
+	private String homeAddress;
+	public String getHomeAddress() {
+		return homeAddress;
+	}
+
+
+	public void setHomeAddress(String homeAddress) {
+		this.homeAddress = homeAddress;
+	}
+
+
 	private List<Score> scores;
 	
 	
@@ -16,11 +31,12 @@ public class Student {
 	}
 	
 	
-	public Student(int age, String name, List<Score> scores) {
+	public Student(int age, String name, List<Score> scores,String address) {
 		super();
 		this.age = age;
 		this.name = name;
 		this.scores = scores;
+		this.homeAddress = address;
 	}
 	
 	
