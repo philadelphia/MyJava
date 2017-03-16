@@ -1,5 +1,6 @@
 package com.zt.reflect;
 
+@Anno
 public class Son extends Parent {
 	private int age;
 	private String name;
@@ -30,5 +31,9 @@ public class Son extends Parent {
 		System.out.println("son draws well");
 	}
 	
+	@Override
+	public String toString() {
+		return super.toString();
+	}
 
 }

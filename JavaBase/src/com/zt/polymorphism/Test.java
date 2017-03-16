@@ -31,7 +31,7 @@ public class Test {
 //		BaseClass 编译时类型，SubClass也是运行时类型
 		System.out.println("*******************");
 		BaseClass polyClass = new SubClass();
-		System.out.println(polyClass.mark);
+		System.out.println(polyClass.mark);  //依然显示父类的字段值，以为实例变量不具有多态性。
 		polyClass.base();
 		polyClass.test();
 		
