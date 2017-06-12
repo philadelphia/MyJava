@@ -2,6 +2,7 @@ package com.zt.demo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -34,10 +35,12 @@ public class Test {
 		System.out.println(students);
 //		被Collections集合类的unmodifiableCollection处理过的集合由于不提供get()方法。所以无法修改集合中的元素。
 //		变相的实现了不可变集合。
-//		unmodifiableCollection()该方法返回一个UnmodifiableCollection对象。
+//		unmodifiableCollection()该方法返回一个UnmodifiableCollection对象。当不想被别人修改你传入的集合时可以使用该方法处理集合。
 //		UnmodifiableCollection类实现了Collection接口。没有get()方法，get是List集合自己的方法，
-		Collections.unmodifiableCollection(students);
-		System.out.println(students);
+		
+		Collection<Student> students1 = Collections.unmodifiableCollection(students);
+	
+		System.out.println(students1);
 		
 		
 		
