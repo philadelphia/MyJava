@@ -1,4 +1,4 @@
-package sort;
+package com.zt.sort;
 
 public class InsertSort {
 	private static int[] array= {1,3,3,6,34,2,4325,23,45,0,-1,-4,-435,90};
