@@ -2,3 +2,5 @@
 /junit4demo/bin/
 /*/bin
 ./metadata
+.idea/
+.metadata/
