@@ -18,8 +18,8 @@ public class BinarySearch {
 		list.add(45);
 		list.add(124);
 		list.add(156);
-//		System.out.println("index == " + find(list, 16, 0 , list.size()));
-//		System.out.println("findByRecusive index == " + findByRecusive(list, 16, 0 , list.size()));
+		System.out.println("index == " + find(list, 16, 0 , list.size()));
+		System.out.println("findByRecusive index == " + findByRecusive(list, 16, 0 , list.size()));
 		System.out.println("index == " + find(list, 43, 0 , list.size()));
 		
 		System.out.println("findByRecusive index == " + findByRecusive(list, 43, 0 , list.size()));
