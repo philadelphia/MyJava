@@ -37,7 +37,30 @@ public class Test {
 		
 //		polyClass 没有sub()方法，所以无法通过编译、因为编译类型是BaseClass，而BaseClass没有sub()方法。
 		((SubClass) polyClass).sub();
+		System.out.println(is2(8));
+		System.out.println(is2(7));
+
+		System.out.println(is2(6));
+
+		System.out.println(is2(5));
+		System.out.println(is2(4));
+
+
 		
 	}
 
+	/**
+	 * 判断要给数字是不是2的N次方
+	 * @param x
+	 * @return
+	 */
+	public static boolean is2(int x){
+		if(x < 0){
+			return false;
+		}else{
+		return (x & (x-1)) == 0;
+		}
+	
+		
+	}
 }
