@@ -3,10 +3,12 @@ package com.zt;
 public class Account {
 	private int acountid;
 	private double blance;
-	private boolean flag = false; //ÒÑ½›ÓÐÈË´æß^ÁË
+	private boolean flag = false; //ï¿½Ñ½ï¿½ï¿½ï¿½ï¿½Ë´ï¿½ï¿½^ï¿½ï¿½
 	
 	private static Account account = new Account();
 	public static Account getInstance(){
+		
+//		syso("this is test");
 		return account;
 	}
 	
@@ -35,9 +37,9 @@ public class Account {
 	
 	public synchronized void draw(double drawcount){
 		if(flag){
-			System.out.println(Thread.currentThread().getName() + "È¡Ç®³É¹¦£¬È¡³öÁË " + drawcount );
+			System.out.println(Thread.currentThread().getName() + "È¡Ç®ï¿½É¹ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ " + drawcount );
 			this.setBlance(this.getBlance() - drawcount);
-			System.out.println("Óà¶îÎª£º" + this.getBlance());
+			System.out.println("ï¿½ï¿½ï¿½Îªï¿½ï¿½" + this.getBlance());
 			flag = false;
 			notify();
 		}else {
@@ -61,9 +63,9 @@ public class Account {
 			}
 		}else {
 			this.setBlance(this.getBlance() + depositcount);
-			System.out.println(Thread.currentThread().getName() + "Óà¶îÎª£º" + this.getBlance());
+			System.out.println(Thread.currentThread().getName() + "ï¿½ï¿½ï¿½Îªï¿½ï¿½" + this.getBlance());
 			flag = true;
-			System.out.println(Thread.currentThread().getName() +"³äÖµ³É¹¦£¡");
+			System.out.println(Thread.currentThread().getName() +"ï¿½ï¿½Öµï¿½É¹ï¿½ï¿½ï¿½");
 			notify();
 		}
 	}
